@@ -359,6 +359,8 @@ const defaults = {
       scrubbingContainer: 'uiza__preview-scrubbing',
       scrubbingContainerShown: 'uiza__preview-scrubbing--is-shown',
     },
+    pauseText: 'uiza--pause-text',
+    likeAndDislike: 'uiza--like-dislike',
   },
 
   // Embed attributes

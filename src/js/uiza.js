@@ -27,6 +27,8 @@ import { getAspectRatio, reduceAspectRatio, setAspectRatio, validateRatio } from
 import { off, on, once, triggerEvent, unbindListeners } from './utils/events';
 import { parseUrl } from './utils/urls';
 import { pip } from './config/states';
+import UzPause from './plugins/pause';
+import UzLikeDisklike from './plugins/like';
 
 // Private properties
 // TODO: Use a WeakMap for private globals
@@ -74,6 +76,8 @@ class Uiza {
         }
       })(),
     );
+
+    console.log(this.config);
 
     // Elements cache
     this.elements = {
@@ -332,6 +336,11 @@ class Uiza {
     if (this.config.poster) {
       this.poster = this.config.poster;
     }
+
+    // Setup pause plugin
+    UzPause.setup.call(this);
+    // setup like dislike plugin
+    UzLikeDisklike.setup.call(this);
   }
 
   // ---------------------------------------

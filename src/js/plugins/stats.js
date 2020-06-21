@@ -9,6 +9,7 @@ const UzStats = {
   ready() {
     const player = this;
     const droppedOf = i18n.get('dropped_of', this.config);
+    console.log(player);
     player.setUiza({
       viewport_dropped: `${player.media.clientWidth}x${player.media.clientHeight} / 0 ${droppedOf}`,
     });

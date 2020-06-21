@@ -133,6 +133,7 @@ const ui = {
     }
 
     // If there's a play button, set label
+    console.log(this.elements.buttons);
     Array.from(this.elements.buttons.play || []).forEach(button => {
       button.setAttribute('aria-label', label);
     });

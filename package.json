@@ -32,8 +32,8 @@
   },
   "scripts": {
     "test": "live-server --browser='Google Chrome' --port=5959 --open=dist --watch=dist/index.html,dist/demo.min.js,dist/uiza.min.js",
-    "dev": "watch 'npm run build' src demo",
-    "build": "NODE_ENV=development gulp build",
+    "dev": "watch \"npm run build\" src demo",
+    "build": "set NODE_ENV=development&& gulp build",
     "build:stage": "NODE_ENV=staging gulp build",
     "build:prod": "NODE_ENV=production gulp build",
     "lint": "eslint src/js && npm run-script remark",

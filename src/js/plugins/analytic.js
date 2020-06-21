@@ -8,6 +8,7 @@ import loadScript from '../utils/load-script';
 const urlAnalytic = '__API_ANALYTIC_POST__';
 const urlTotalviewer = '__API_ANALYTIC_GET__';
 
+console.log('analytic.js');
 // simple uuidv4
 const uuidv4 = () => {
   let x = new Date().getTime();
